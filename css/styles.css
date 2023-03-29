@@ -150,6 +150,20 @@ h3, .h3 {
   }
 }
 
+titulo {
+   color: white;
+   font-family: 'Rock Salt', cursive;
+   font-size: calc(0.8rem + 1.5vw);
+   font-weight: lighter;
+}
+
+titulo2 {
+  color: white;
+  font-family: 'Rock Salt', cursive;
+  font-size: calc(0.8rem + 1.5vw);
+  font-weight: bolder;
+}
+
 h4, .h4 {
   font-size: calc(1.275rem + 0.3vw);
 }
