@@ -70,6 +70,48 @@
   box-sizing: border-box;
 }
 
+#shapes {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+
+.shape {
+  position: absolute;
+  opacity: 0.2;
+}
+
+.circle {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+  top: 20%;
+  left: 20%;
+}
+
+.triangle {
+  width: 0;
+  height: 0;
+  border-left: 150px solid transparent;
+  border-right: 150px solid transparent;
+  border-bottom: 150px solid #161111;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.square {
+  width: 200px;
+  height: 200px;
+  background-color: #FFFFFF;
+  top: 70%;
+  left: 70%;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   :root {
     scroll-behavior: smooth;
@@ -84,11 +126,16 @@ body {
   line-height: var(--bs-body-line-height);
   color: var(--bs-body-color);
   text-align: var(--bs-body-text-align);
-  background-color: var(--bs-body-bg);
+  background: linear-gradient(to left, #ffffff, #e9c2fc);
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
+@media (max-width: 768px) {
+  body {
+    background: linear-gradient(to left,  #ffffff,#e9c2fc);
+  }
+}
 hr {
   margin: 1rem 0;
   color: inherit;
@@ -207,10 +254,8 @@ p {
 }
 
 .main-container {
-  background-color: #1a1a1a;
-  color: #fff;
-  padding: 20px;
-  background-image: url("assets/fondo.jpg");
+  padding: 100px;
+  padding-bottom: 20px;
   background-size: cover;
   background-position: center center;
   justify-content: center;
@@ -234,6 +279,30 @@ abbr[data-bs-original-title] {
           text-decoration-skip-ink: none;
 }
 
+
+.versiculo {
+  margin-left: 10%;
+  margin-right: 0 auto;
+  max-width: 50%; /* ancho máximo del container */
+  text-shadow: 5px 4px 5px #7e717180;
+}
+
+@media screen and (max-width: 767px) {
+  /* estilos para pantallas menores a 768px */
+  .versiculo {
+    max-width: 100%;
+    text-shadow: 3px 1.5px 3px #7e717180;
+  }
+}
+
+.fade-in-text {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.fade-in-text.fade-in {
+  opacity: 1;
+}
 address {
   margin-bottom: 1rem;
   font-style: normal;
