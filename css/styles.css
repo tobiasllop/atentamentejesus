@@ -198,7 +198,7 @@ h3, .h3 {
 }
 
 titulo {
-   color: white;
+   color: rgb(255, 167, 126);
    font-family: 'Rock Salt', cursive;
    font-size: calc(0.8rem + 1.5vw);
    font-weight: lighter;
@@ -279,20 +279,44 @@ abbr[data-bs-original-title] {
           text-decoration-skip-ink: none;
 }
 
+.container-full-width {
+  width: 100%;
+  padding: 0%;
+}
 
+.square-with-rounded-corners {
+  background-color: #00000027; /* color de fondo */
+  border-radius: 10px; /* bordes curvos */
+  height: auto; /* altura del cuadrado, puedes ajustarla según tus necesidades */
+  min-height: 200px; /* ajusta el tamaño mínimo según tus necesidades */
+  padding: 20px; /* ajusta el relleno según tus necesidades */
+  width: 100%;
+  max-width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  .container-full-width {
+    grid-template-columns: repeat(12, 1fr);
+    justify-items: center;
+  }
+  .square-with-rounded-corners {
+    grid-column: 2 / span 10;
+    min-height: 150px;
+    padding: 10px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .container-full-width {
+    padding: 0 48px;
+  }
+}
 .versiculo {
+  color: rgb(247, 239, 235);
   margin-left: 10%;
   margin-right: 0 auto;
   max-width: 50%; /* ancho máximo del container */
   text-shadow: 5px 4px 5px #7e717180;
-}
-
-@media screen and (max-width: 767px) {
-  /* estilos para pantallas menores a 768px */
-  .versiculo {
-    max-width: 100%;
-    text-shadow: 3px 1.5px 3px #7e717180;
-  }
 }
 
 .fade-in-text {
@@ -303,6 +327,19 @@ abbr[data-bs-original-title] {
 .fade-in-text.fade-in {
   opacity: 1;
 }
+
+.enlace-con-efecto {
+  display: inline-block;
+  transition: transform 0.2s;
+  color:rgba(128, 0, 75, 0.87); 
+  font-size: 70%;
+  text-decoration: none;
+}
+
+.enlace-con-efecto:hover {
+  transform: scale(1.1);
+}
+
 address {
   margin-bottom: 1rem;
   font-style: normal;

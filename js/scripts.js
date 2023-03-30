@@ -30,3 +30,14 @@ function fadeInOnScroll() {
 window.addEventListener('scroll', function() {
   fadeInOnScroll();
 });
+
+
+const enlace = document.querySelector('.enlace-con-efecto');
+
+enlace.addEventListener('mouseenter', () => {
+  enlace.classList.add('enlace-grande');
+});
+
+enlace.addEventListener('mouseleave', () => {
+  enlace.classList.remove('enlace-grande');
+});
