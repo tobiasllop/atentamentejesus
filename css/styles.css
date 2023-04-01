@@ -86,14 +86,14 @@ body {
   line-height: var(--bs-body-line-height);
   color: var(--bs-body-color);
   text-align: var(--bs-body-text-align);
-  background: linear-gradient(to left, #ffffff, #e9c2fc);
+  background: linear-gradient(to right, #ff3d8785, #e9c2fc);
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 @media (max-width: 768px) {
   body {
-    background: linear-gradient(to left,  #ffffff,#e9c2fc);
+    background: linear-gradient(to right,  #ff3d8785 ,#e9c2fc);
   }
 }
 hr {
@@ -394,6 +394,33 @@ abbr[data-bs-original-title] {
 
 
 
+.imagen {
+  width: 100%;
+  max-width: 1422px;
+  margin: 0 auto;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.imagen img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 20px;
+}
+
+.encabezado {
+  color: #000000;
+  text-align: center;
+  padding: 20px;
+}
+
+.texto {
+  color: #242323;
+  text-align: center;
+  padding: 20px;
+  text-shadow: 5px 4px 5px #7e717180;
+}
 
 
 address {
