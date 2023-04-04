@@ -444,6 +444,7 @@ abbr[data-bs-original-title] {
 }
 
 
+
 .facebook-link {
   display: flex;
   align-items: center;
@@ -456,13 +457,19 @@ abbr[data-bs-original-title] {
 }
 
 @media (max-width: 767px) {
-  .facebook-link i {
-    font-size: 20px;
-    margin-right: 5px;
+  .facebook-link .fa-facebook-f {
+    font-size: 0.8rem;
   }
+}
 
-  .facebook-link span {
-    display: none;
+.facebook-link {
+  display: inline-flex;
+  align-items: center;
+}
+
+@media (max-width: 767px) {
+  .facebook-link .ms-2 {
+    margin-left: 5px;
   }
 }
 
