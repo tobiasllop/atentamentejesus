@@ -41,3 +41,6 @@ enlace.addEventListener('mouseenter', () => {
 enlace.addEventListener('mouseleave', () => {
   enlace.classList.remove('enlace-grande');
 });
+$(document).ready(function(){
+  $('.carousel').carousel();
+});
