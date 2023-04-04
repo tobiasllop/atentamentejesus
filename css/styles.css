@@ -428,45 +428,6 @@ abbr[data-bs-original-title] {
   position: relative;
 }
 
-.carousel {
-  display: flex;
-  flex-wrap: nowrap;
-  transition: transform 0.6s ease;
-}
-
-.carousel-item {
-  flex: 0 0 100%;
-  margin-right: 10px;
-}
-
-.item-content {
-  position: relative;
-}
-
-.item-content img {
-  width: 100%;
-}
-
-.carousel-caption {
-  position: absolute;
-  top: 10%;
-  left: 10%;
-  right: 10%;
-  background-color: rgba(255, 255, 255, 0.7);
-  padding: 20px;
-  text-align: center;
-}
-
-.carousel-caption h3 {
-  font-size: 24px;
-  margin-bottom: 10px;
-}
-
-.carousel-caption p {
-  font-size: 18px;
-}
-
-
 
 address {
   margin-bottom: 1rem;
