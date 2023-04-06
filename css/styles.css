@@ -511,6 +511,7 @@ abbr[data-bs-original-title] {
 @media (max-width: 767px) {
   .card {
     width: calc(100% - 20px);
+    font-size: 70%;
   }
 }
 
