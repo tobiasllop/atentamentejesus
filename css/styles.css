@@ -521,6 +521,32 @@ abbr[data-bs-original-title] {
 }
 
 
+.videos-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.video-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 10px;
+}
+
+.video {
+  width: calc(33.33% - 20px);
+  margin: 10px;
+}
+
+@media screen and (max-width: 767px) {
+  .video {
+    width: 100%;
+  }
+}
+
+
+
 address {
   margin-bottom: 1rem;
   font-style: normal;
