@@ -518,33 +518,37 @@ abbr[data-bs-original-title] {
   .card p .card .h1{
     font-size: 50%;
   }
+  
 }
+
 
 
 .videos-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  max-width: 50%;
+  margin: 0 auto;
 }
 
-.video-row {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin: 10px;
+.videoyt {
+  margin-bottom: 20px;
+  position: relative;
+  padding-bottom: 56.25%; /* relación de aspecto 16:9 (1920/1080) */
+  overflow: hidden;
 }
 
-.video {
-  width: calc(33.33% - 20px);
-  margin: 10px;
+.videoyt iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
-@media screen and (max-width: 767px) {
-  .video {
-    width: 100%;
+@media (max-width: 767px) {
+  .videos-container {
+    max-width: 90%;
   }
+  
 }
-
 
 
 address {
